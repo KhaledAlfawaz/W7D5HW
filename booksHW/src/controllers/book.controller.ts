@@ -27,7 +27,12 @@ export const createBook = async (req: Request, res: Response) => {
           genre:true,
           users:{
             select:{
-              user:true
+              user:{
+                select:{
+                  id:true,
+                  username:true,
+                }
+              }
             }
           }
         },
