@@ -22,7 +22,7 @@ const emailValidation = z.string({
   invalid_type_error:"email must be string"
 })
 
-const roleValidation = z.enum(["admin", "user"], {
+const roleValidation = z.enum(["admin" ,"Admin","ADMIN", "user" , "User" , "USER"], {
   required_error: "role is required",
 })
 
